@@ -1,0 +1,413 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#dashboard-user {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Card Styles */
+
+#layanan {
+  position: relative;
+  z-index: 0;
+  background-color: #007bff;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#layanan .card {
+  margin-top: 30px;
+}
+
+#layanan .card-title {
+  font-size: 1.75em;
+  margin-bottom: 20px;
+}
+
+#layanan .card-body ul li {
+  list-style-type: none;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  background-color: #e9ecef;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+/* Table Styles */
+.table thead {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.login-form .form-control,
+.register-form .form-control,
+.login-form button,
+.register-form button {
+  border-radius: 30px;
+}
+
+.login-form .form-group,
+.register-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form .btn,
+.register-form .btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Carousel Styles */
+.carousel-item {
+  position: relative;
+  width: 1200px;
+  height: 600px; /* Adjust height as needed */
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+  display: block;
+  width: 1200px;
+  height: 600px;
+  object-fit: cover; /* Ensures the image covers the entire div */
+}
+
+/* Navigation Bar Styles */
+
+#mainNavbar {
+  top: 0;
+  bottom: auto;
+}
+
+.navbar-custom {
+  background-color: #fcfcfc;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  color: #4531ff;
+  font-weight: bold;
+}
+#navbar-brands:hover {
+  color: #639cd9;
+  transition: color 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-item {
+  margin: 10px 0;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #4531ff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #070f2b;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #639cd9;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  color: #070f2b;
+}
+
+.navbar-nav.ms-auto {
+  margin-left: auto;
+}
+
+/* Kelas ini akan ditambahkan saat di-scroll */
+.navbar-scrolled {
+  /* opacity: 0.7; */
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* Page Section Margins */
+#layanan,
+#karyawan,
+#galeri {
+  margin-top: 100px;
+}
+#karyawan .col-12.col-md-6.col-lg-3 .card .card-body figure figcaption,
+#karyawan .col-12.col-md-6.col-lg-3 .card .card-body figure figcaption p {
+  background-color: #007bff;
+  color: white !important;
+}
+
+/* Profile Card Styles */
+.profile-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.profile-card img {
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+.profile-card ul li {
+  margin: 10px 0;
+}
+
+/* CSS khusus untuk kartu pada bagian layanan */
+#layanan .card::after {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 35px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 19px 28px 5px rgba(64, 64, 64, 0.09);
+  box-shadow: 0 19px 28px 5px rgba(64, 64, 64, 0.09);
+  content: "";
+  z-index: -1;
+}
+
+#layanan a.card {
+  text-decoration: none;
+}
+
+#layanan .card {
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
+}
+
+#layanan .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+#layanan .box-shadow {
+  -webkit-box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09) !important;
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09) !important;
+}
+
+#layanan .ml-auto,
+#layanan .mx-auto {
+  margin-left: auto !important;
+}
+
+#layanan .mr-auto,
+#layanan .mx-auto {
+  margin-right: auto !important;
+}
+
+#layanan .rounded-circle {
+  border-radius: 50% !important;
+}
+
+#layanan .bg-white {
+  background-color: #fff !important;
+}
+
+#layanan .d-block {
+  display: block !important;
+}
+
+#layanan img,
+#layanan figure {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+#layanan .card-text {
+  padding-top: 12px;
+  color: #8c8c8c;
+}
+
+#layanan .text-sm {
+  font-size: 12px !important;
+}
+
+#layanan p,
+#layanan .p {
+  margin: 0 0 16px;
+}
+
+#layanan .card-title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#layanan .pt-1,
+#layanan .py-1 {
+  padding-top: 0.25rem !important;
+}
+
+#layanan .head-icon {
+  margin-top: 18px;
+  color: #ff4500;
+}
+
+.large-icon {
+  font-size: 3rem;
+}
+
+/* galeri Card Styles */
+#galeri .banner {
+  background-color: #007bff;
+}
+/* Login/Register Styles */
+#main-body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 900px;
+  max-width: 100%;
+}
+
+.login-info,
+.register-info {
+  background: #6c63ff;
+  color: white;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-info h2,
+.register-info h2,
+.login-form h2,
+.register-form h2 {
+  margin: 0 0 20px;
+}
+
+.login-info p,
+.register-info p,
+.login-form .register-link,
+.register-form .login-link {
+  margin: 0;
+  text-align: center;
+}
+
+.login-form,
+.register-form {
+  padding: 40px;
+  flex: 1;
+}
+
+.login-form .error-message,
+.register-form .error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.register-form .success-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Custom styling for the navigation bar */
+.navbar-nav.ml-auto {
+  margin-right: 0;
+}
+
+.btn-social-icon i {
+  font-size: 2rem; /* Adjust icon size */
+}
+
+/* FOOTER */
+.footer {
+  background-color: #007bff;
+}
+
+.footer .links-section h6,
+.footer .text-section p,
+.footer .social-section a {
+  color: #fff;
+  font-weight: lighter; /* Mengatur font ke ringan (light) */
+}
+.footer a {
+  text-decoration: none; /* Menghapus garis bawah */
+}
+
+.footer a:hover {
+  text-decoration: none; /* Menghapus garis bawah pada hover */
+}
+
+.footer .social-section a:hover {
+  color: #ccc;
+}
+
+.footer .footer-bottom {
+  background-color: #00237a;
+}
